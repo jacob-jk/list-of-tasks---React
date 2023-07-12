@@ -1,0 +1,26 @@
+.buttons {
+    color: #008080;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    transition: 0.5s;
+}
+
+@media(max-width: 767px) {
+    .buttons {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.buttons:hover {
+    color: #00b3b3;
+}
+
+.buttons:disabled {
+    color: #9f9d9d;
+}
