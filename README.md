@@ -6,7 +6,7 @@
 
 Having troubles with organizing your job? Here's a newly designed tool to help you manage dealing with upcoming and performed events - a list of tasks enabling users to tick done and awaiting tasks!
 
-![app](./src/images/screenshot.png)
+![app](/public/images/screenshot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
