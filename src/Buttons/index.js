@@ -1,14 +1,14 @@
 import "./style.css";
 
-const Buttons = (props) =>
-  props.tasks.length > 0 && (
-    <div className="buttons">
-      <button className="buttons">
-        {props.hideDone ? "Pokaż" : "Ukryj"} ukończone
+const Buttons = ({ tasks, hideDone }) =>
+  tasks.length > 0 && (
+    <div className="buttons__button">
+      <button className="buttons__button">
+        {hideDone ? "Pokaż" : "Ukryj"} ukończone
       </button>
       <button
-        className="buttons"
-        disabled={props.tasks.every(({ done }) => done)}
+        className="buttons__button"
+        disabled={tasks.every(({ done }) => done)}
       >
         Ukończ wszystkie
       </button>
