@@ -9,9 +9,7 @@
 
 @media (max-width: 767px) {
     .form {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 20px;
     }
 }
 
@@ -19,15 +17,16 @@
 .form__input {
     margin: 10px 0;
     border: 2px solid #e2e1e1;
+    height: 40px;
 }
 
 .form__button {
-    margin: 10px 0 10px 10px;
+    margin: 10px 0;
     height: 40px;
     color: white;
     background-color: #008080;
     border: none;
-    cursor: pointer;
+    cursor: grab;
     transition: 0.5s;
 }
 

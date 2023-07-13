@@ -1,8 +1,8 @@
-.buttons {
+.buttons__button {
     color: #008080;
     background-color: #ffffff;
     border: none;
-    cursor: pointer;
+    cursor: grab;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,16 +11,20 @@
 }
 
 @media(max-width: 767px) {
-    .buttons {
+    .buttons__button {
         flex-basis: 100%;
-        margin: 10px;
+        margin: 0 10px 10px;
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
-.buttons:hover {
+.buttons__button:hover {
     color: #00b3b3;
 }
 
-.buttons:disabled {
+.buttons__button:disabled {
     color: #9f9d9d;
+    cursor: not-allowed;
 }
