@@ -28,6 +28,8 @@
     width: 30px;
     height: 30px;
     transition: 0.5s;
+    cursor: grab;
+
 }
 
 .list__buttonTask--done {
@@ -48,10 +50,10 @@
 }
 
 .list__buttonTask--remove:hover {
-    background-color: #c71f1f;
+    background-color: #d91e1e;
 }
 
 .list__buttonTask--remove:active {
-    background-color: #dd2222;
+    background-color: #e91414;
     border: 2px solid #000;
 }
