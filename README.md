@@ -2,6 +2,10 @@
 
 ![tasks](https://cdn.dribbble.com/users/4241563/screenshots/11874468/media/7796309c77cf752615a3f9062e6a3b3d.gif)
 
+## Demo
+
+https://jacob-jk.github.io/list-of-tasks---React/
+
 ## Description
 
 Having troubles with organizing your job? Here's a newly designed tool to help you manage dealing with upcoming and performed events - a list of tasks enabling users to tick done and awaiting tasks!
@@ -20,10 +24,11 @@ BEM convention
 Normalize
 GIT
 Grid
-
-## Demo
-
-https://jacob-jk.github.io/list-of-tasks---React/
+useState
+React JS
+React Hooks
+immutability Concept
+Styled Components
 
 ## Available Scripts
 
