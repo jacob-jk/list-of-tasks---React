@@ -16,19 +16,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
-ES6+
-HTML
-JavaScript
-CSS
-BEM convention
-Normalize
-GIT
-Grid
-useState
-React JS
-React Hooks
-immutability Concept
-Styled Components
+<li>ES6+</li>
+<li>HTML</li>
+<li>JavaScript</li>
+<li>CSS</li>
+<li>BEM convention</li>
+<li>Normalize</li>
+<li>GIT</li>
+<li>Grid</li>
+<li>useState</li>
+<li>React JS</li>
+<li>React Hooks</li>
+<li>Immutability Concept</li>
+<li>Styled Components</li>
 
 ## Available Scripts
 
