@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://jacob-jk.github.io/list-of-tasks---React/
+https://jacob-jk.github.io/list-of-tasks-react/
 
 ## Description
 
@@ -25,6 +25,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <li>GIT</li>
 <li>Grid</li>
 <li>useState</li>
+<li>useEffect</li>
 <li>React JS</li>
 <li>React Hooks</li>
 <li>Immutability Concept</li>
