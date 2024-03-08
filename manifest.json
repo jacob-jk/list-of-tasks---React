@@ -1,0 +1,25 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "public": "checklist.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "public": "letsdothis.jpg",
+      "type": "image/jpg",
+      "sizes": "1200x1200"
+    },
+    {
+      "public": "screenshot.png",
+      "type": "image/png",
+      "sizes": "976x562"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
