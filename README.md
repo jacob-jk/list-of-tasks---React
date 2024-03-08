@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://jacob-jk.github.io/list-of-tasks-react/
+https://jacob-jk.github.io/list-of-tasks-reactapp/
 
 ## Description
 
