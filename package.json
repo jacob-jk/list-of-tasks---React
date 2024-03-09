@@ -2,7 +2,7 @@
   "name": "list-of-tasks-reactapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jacob-jk.github.io/list-of-tasks-reactapp/",
+  "homepage": "https://jacob-jk.github.io/list-of-tasks---React/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
