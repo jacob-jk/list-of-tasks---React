@@ -1,12 +1,12 @@
-import "./style.css";
+import { Wrapper, SectionBox } from "./styled";
 
 const Section = ({ tittle, listContent, extraHeaderContent }) => (
-  <section className="section">
-    <div className="section__header">
+  <Wrapper>
+    <SectionBox>
       <h2>{tittle}</h2>
       {extraHeaderContent}
-    </div>
+    </SectionBox>
     {listContent}
-  </section>
+  </Wrapper>
 );
 export default Section;

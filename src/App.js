@@ -3,7 +3,6 @@ import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Header from "./Header";
 import Container from "./Container";
 
 function App() {
@@ -53,8 +52,7 @@ function App() {
   };
 
   return (
-    <Container>
-      <Header tittle="Lista zadań" />
+    <Container tittle="Lista zadań">
       <Section
         tittle="Dodaj nowe zadanie"
         listContent={<Form addNewTask={addNewTask} />}
