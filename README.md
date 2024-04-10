@@ -10,7 +10,7 @@ https://jacob-jk.github.io/list-of-tasks---React/
 
 Having troubles with organizing your job? Here's a newly designed tool that helps you with managing upcoming and performed events - a list of tasks enabling users to tick done and awaiting tasks!
 
-![app](/public/images/screenshot.png)
+![app](/src/images/screenshot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
