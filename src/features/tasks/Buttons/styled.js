@@ -23,6 +23,9 @@ export const Button = styled.button`
     css`
       color: #9f9d9d;
       cursor: not-allowed;
+
+      &:hover {
+        color: #9f9d9d;
     `}
 
   @media (max-width: 767px) {
