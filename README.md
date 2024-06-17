@@ -30,6 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <li>React Hooks</li>
 <li>Immutability Concept</li>
 <li>Styled Components</li>
+<li>Redux</li>
 
 ## Available Scripts
 
