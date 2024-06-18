@@ -26,6 +26,7 @@ export const Button = styled.button`
 
       &:hover {
         color: #9f9d9d;
+      }
     `}
 
   @media (max-width: 767px) {
