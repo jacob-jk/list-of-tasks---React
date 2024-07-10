@@ -1,43 +1,53 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Wrapper, Button } from "./styled";
 import {
-  selectTasksState,
   toggleHideDone,
   setAllDone,
-  selectTasksObjects,
+  selectTasks,
+  selectHideDone,
+  selectNonEmptyTasks,
+  selectEveryTaskDone,
+  fetchExampleTasks,
 } from "../tasksSlice";
 import { useEffect } from "react";
 
 const Buttons = () => {
-  const { hideDone } = useSelector(selectTasksState);
-  const tasks = useSelector(selectTasksObjects);
+  const hideDone = useSelector(selectHideDone);
+  const tasks = useSelector(selectTasks);
+  const nonEmptyTasks = useSelector(selectNonEmptyTasks);
+  const everyTaskDone = useSelector(selectEveryTaskDone);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const getEffect = () => {
-      if (tasks.every(({ done }) => done === true)) {
+      if (nonEmptyTasks && everyTaskDone) {
         window.alert("Brawo! Zadania zostały ukończone.");
       }
       return;
     };
 
     setTimeout(getEffect, 2000);
-  }, [tasks]);
+  }, [tasks, nonEmptyTasks, everyTaskDone]);
 
   return (
-    tasks.length > 0 && (
-      <Wrapper>
-        <Button onClick={() => dispatch(toggleHideDone())}>
-          {hideDone ? "Pokaż" : "Ukryj"} ukończone
-        </Button>
-        <Button
-          $disabled={tasks.every(({ done }) => done)}
-          onClick={() => dispatch(setAllDone(), console.log("nic"))}
-        >
-          Ukończ wszystkie
-        </Button>
-      </Wrapper>
-    )
+    <Wrapper>
+      <Button onClick={() => dispatch(fetchExampleTasks())}>
+        Pobierz przykładowe zadania
+      </Button>
+      {nonEmptyTasks && (
+        <>
+          <Button onClick={() => dispatch(toggleHideDone())}>
+            {hideDone ? "Pokaż" : "Ukryj"} ukończone
+          </Button>
+          <Button
+            $disabled={everyTaskDone}
+            onClick={() => dispatch(setAllDone())}
+          >
+            Ukończ wszystkie
+          </Button>
+        </>
+      )}
+    </Wrapper>
   );
 };
 
