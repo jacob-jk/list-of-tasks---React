@@ -7,7 +7,6 @@ import {
   selectHideDone,
   selectNonEmptyTasks,
   selectEveryTaskDone,
-  fetchExampleTasks,
 } from "../tasksSlice";
 import { useEffect } from "react";
 
@@ -31,9 +30,6 @@ const Buttons = () => {
 
   return (
     <Wrapper>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Pobierz przykładowe zadania
-      </Button>
       {nonEmptyTasks && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>

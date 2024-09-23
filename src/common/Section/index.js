@@ -1,12 +1,12 @@
 import { Wrapper, SectionBox } from "./styled";
 
-const Section = ({ tittle, listContent, extraHeaderContent }) => (
+const Section = ({ tittle, extraHeaderContent, body }) => (
   <Wrapper>
     <SectionBox>
       <h2>{tittle}</h2>
       {extraHeaderContent}
     </SectionBox>
-    {listContent}
+    {body}
   </Wrapper>
 );
 export default Section;

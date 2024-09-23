@@ -6,6 +6,7 @@ const tasksSlice = createSlice({
   initialState: {
     tasks: getTasksFromLocalStorage(),
     hideDone: false,
+    loadingState: false,
   },
   reducers: {
     addTask: ({ tasks }, { payload: task }) => {
@@ -30,6 +31,10 @@ const tasksSlice = createSlice({
     fetchExampleTasks: () => {},
     setExampleTasks: (state, { payload: exampleTasks }) => {
       state.tasks = exampleTasks;
+      state.loadingState = false;
+    },
+    loadingStateSuccess: (state) => {
+      state.loadingState = true;
     },
   },
 });
@@ -42,12 +47,30 @@ export const {
   setAllDone,
   fetchExampleTasks,
   setExampleTasks,
+  loadingStateSuccess,
 } = tasksSlice.actions;
 
 const selectTasksState = (state) => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectHideDone = (state) => selectTasksState(state).hideDone;
+export const selectLoadingState = (state) =>
+  selectTasksState(state).loadingState;
 export const selectNonEmptyTasks = (state) => selectTasks(state).length > 0;
 export const selectEveryTaskDone = (state) =>
   selectTasks(state).every(({ done }) => done);
+
+export const getTaskById = (state, taskId) =>
+  selectTasks(state).find(({ id }) => id === taskId);
+
+export const selectTasksByQuery = (state, query) => {
+  const tasks = selectTasks(state);
+  if (!query || query.trim() === "") {
+    return tasks;
+  }
+
+  return tasks.filter(({ content }) =>
+    content.toUpperCase().includes(query.trim().toUpperCase())
+  );
+};
+
 export default tasksSlice.reducer;
