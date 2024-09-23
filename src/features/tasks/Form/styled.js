@@ -22,7 +22,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   margin: 10px 0;
   height: 40px;
-  color: white;
+  color: #ffffff;
   background-color: #008080;
   border: none;
   cursor: grab;
