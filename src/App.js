@@ -1,5 +1,4 @@
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Introduction from "./features/introduction/IntroductionPage";
 import TasksPage from "./features/tasks/TasksPage";
 import SingleTask from "./features/tasks/TaskPage/TaskPage";
@@ -7,7 +6,7 @@ import { StyledList, StyledNav, StyledNavLink } from "./styledNavigation";
 
 function App() {
   return (
-    <BrowserRouter basename="/list-of-tasks---React">
+    <HashRouter>
       <StyledNav>
         <StyledList>
           <li>
@@ -32,7 +31,7 @@ function App() {
           <Redirect to="/zadania" />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
