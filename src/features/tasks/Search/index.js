@@ -1,6 +1,6 @@
 import { Input } from "../Form/styled";
 import { Wrapper } from "./styled";
-import { useQueryParameter, useReplaceQueryParameter } from "./queryParams";
+import { useQueryParameter, useReplaceQueryParameter } from "../queryParams";
 
 export const searchQueryParamName = "szukaj";
 
